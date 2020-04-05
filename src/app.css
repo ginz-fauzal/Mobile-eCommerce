@@ -1,0 +1,225 @@
+.fa {
+    font-family: "FontAwesome";
+}
+
+ActionBar .action-bar-title {
+    horizontal-align: left;
+}
+
+.border-top{
+    border-width: 2 0 0 0;
+    border-color: #428bca;
+}
+
+.foto {
+    horizontal-align: left;
+}
+
+.tab{
+    border-radius: 10 10 0 0;
+    border-width: 1 1 0 1;
+    border-color: #428bca;
+}
+
+.tab-off{
+    border-width: 0 0 1 0;
+    border-color: #428bca;
+}
+
+.gradient-blue{
+    background-image: linear-gradient(-90deg, #65a5da, #428bca);
+}
+
+.gradient-yellow{
+    background-image: linear-gradient(-90deg, #65a5da, #FFD506);
+}
+
+.gradient-green{
+    background-image: linear-gradient(-90deg, #65a5da, #91DC5A);
+}
+
+.gradient-red{
+    background-image: linear-gradient(-90deg, #65a5da, rgb(243, 74, 74));
+}
+
+.blue{
+    background-color: #65a5da;
+}
+
+.blue-core{
+    background-color: #428bca;
+}
+
+.yellow{
+    background-color: #F2b700;
+}
+
+
+.orange{
+    background-color: #FF6321;
+}
+
+.green{
+    background-color: #91DC5A;
+}
+
+.red{
+    background-color: #FFCFCF;
+}
+
+.white{
+    background-color: #FFFFFF;
+}
+
+.white-h{
+    background-color: #FFFFFF;
+}
+
+.text{
+    color: #6E7989;
+    vertical-align: middle;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text-b{
+    color: #272A3F;
+    vertical-align: middle;
+}
+
+.text-c{
+    color: #428bca;
+    vertical-align: middle;
+}
+
+.text-o{
+    color: #FF6321;
+    vertical-align: middle;
+}
+
+.text-g{
+    color: #91DC5A;
+    vertical-align: middle;
+}
+
+ActionBar {
+    font-family: "SciFlySans";
+    src: url(fonts/SciFlySans.ttf);
+    color: white;
+    font-size: 25;
+}
+
+.span{
+    font-family: 'SciFlySans';
+    src: url(fonts/SciFlySans.ttf);
+}
+
+.text-w{
+    color: whitesmoke;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.middle{
+    vertical-align: middle;
+}
+
+.bottom{
+    vertical-align: bottom;
+}
+
+.input{
+    border-radius: 25;
+    border-width: 0.5;
+    border-color: #FFFFFF;
+    background-color: white;
+}
+
+.input-number{
+    border-width: 0;
+    color: #554E8F;
+}
+
+.btn-icon{
+    border-radius: 100%;
+    background-color: #428bca;
+    color: white;
+}
+
+.t-mini{
+    font-size: 12;
+}
+.t-medium{
+    font-size: 18;
+}
+.t-big{
+    font-size: 25;
+}
+
+.labels{
+    border-width: 1;
+    border-color: #65a5da;
+    color: #428bca;
+    background-color: #FFFFFF;
+}
+
+.btn {
+    background-color: #65a5da;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.btn:active {
+    background-color: #428bca;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #91DC5A;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.btn-success:active {
+    background-color: #91DC5A;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.btn-warning-soft {
+    background-color: white;
+    color: #FF6321;
+    border-width: 1;
+    border-color: #FF6321;
+    font-weight: bold;
+}
+
+.btn-warning-soft:active {
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: #FF6321;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.btn-warning:active {
+    background-color: #FF6321;
+    color: lightseagreen;
+    font-weight: bold;
+}

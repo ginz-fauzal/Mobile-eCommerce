@@ -1,0 +1,47 @@
+<ActionBar class="blue-core">
+    <Label class="action-bar-title" text="Keranjang"></Label>
+</ActionBar>
+<GridLayout rows="*,auto">
+    <ScrollView row="0" scrollBarIndicatorVisible="false">
+        <GridLayout padding="10 0 10 0" rows="*,auto" class="white">
+            <GridLayout row="0" rows="auto,auto">
+                <StackLayout row="0" orientation="horizontal">
+                    <Label marginLeft="20" text="&#xf00c;"  borderRadius="10" height="25" padding="5" class="middle orange text-w center fa"></Label>
+                    <Label text="Pilih semua"  borderRadius="10" height="40" padding="10" class="text t-medium fa"></Label>
+                </StackLayout>
+                <ScrollView row="1" scrollBarIndicatorVisible="false" orientation="horizontal">
+                    <StackLayout>
+                        <GridLayout *ngFor="let item of masak" class="white-h" margin="7 15 7 15" padding="10"
+                            borderRadius="10" rows="100" columns="auto,auto,*" androidElevation="5">
+                            <GridLayout row="0" col="0">
+                                <Label text="&#xf00c;" borderRadius="10" height="25" padding="5" class="middle orange text-w center fa"></Label>
+                            </GridLayout>
+                            <Image row="0" col="1" class="middle" src="{{item.image}}" width="140" height="100"
+                                borderRadius="10" stretch="aspectFit">
+                            </Image>
+                            <GridLayout row="0" col="2" rows="*,auto" margin="0 0 0 10">
+                                <StackLayout row="0">
+                                    <Label text="{{item.text}}" class="text t-mini"></Label>
+                                    <Label text="Rp {{formatuang(item.harga)}}" class="text-c bold"></Label>
+                                </StackLayout>
+                                <GridLayout row="1" class="bottom" rows="40" columns="auto,70,auto">
+                                    <Label row="0" col="0" text="&#xf068;" class="fa text t-medium"></Label>
+                                    <TextField row="0" col="1" text="1" hint="1" class="input-number center t-medium">
+                                    </TextField>
+                                    <Label row="0" col="2" text="&#xf067;" class="fa text t-medium"></Label>
+                                </GridLayout>
+                            </GridLayout>
+                        </GridLayout>
+                    </StackLayout>
+                </ScrollView>
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+    <GridLayout row="1" padding="5 15 5 15" class="border-top" columns="*,*">
+        <StackLayout>
+            <Label col="0" class="t-mini text-c center middle" text="Total"></Label>
+            <Label col="0" class="t-medium text-c center middle bold" text="Rp 145.000"></Label>
+        </StackLayout>
+        <Button col="1" text="&#xf07a; Pesan" class="btn-warning fa"></Button>
+    </GridLayout>
+</GridLayout>

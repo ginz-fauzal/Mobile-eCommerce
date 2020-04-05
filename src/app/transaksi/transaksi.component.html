@@ -1,0 +1,80 @@
+<ActionBar class="blue-core">
+    <Label class="action-bar-title" text="Transaksi"></Label>
+</ActionBar>
+<ScrollView scrollBarIndicatorVisible="false" class="white">
+    <GridLayout rows="auto,auto,*">
+        <GridLayout padding="15 15 0 15" row="0" columns="*,auto">
+            <TextField padding="5 10 5 10" col="0" text="" hint="Cari transaksi" class="input t-medium">
+            </TextField>
+            <Label marginLeft="15" col="1" text="&#xf002;" class="text-b t-big fa"></Label>
+        </GridLayout>
+        <GridLayout row="1" rows="auto">
+            <ScrollView row="0" scrollBarIndicatorVisible="false" orientation="horizontal">
+                <StackLayout orientation="horizontal">
+                    <GridLayout margin="15 0 10 15" stretch="aspectFit" height="40" androidElevation="5" columns="*">
+                        <Label padding="10" borderRadius="10" textWrap="true" col="0" class="t-mini labels"
+                            text="Semua Pesanan"></Label>
+                    </GridLayout>
+                    <GridLayout margin="15 0 10 15" stretch="aspectFit" height="40" androidElevation="5" columns="*">
+                        <Label padding="10" borderRadius="10" textWrap="true" col="0" class="t-mini labels"
+                            text="Pesanan Baru"></Label>
+                    </GridLayout>
+                    <GridLayout margin="15 0 10 15" stretch="aspectFit" height="40" androidElevation="5" columns="*">
+                        <Label padding="10" borderRadius="10" textWrap="true" col="0" class="t-mini labels"
+                            text="Siap Kirim"></Label>
+                    </GridLayout>
+                    <GridLayout margin="15 0 10 15" stretch="aspectFit" height="40" androidElevation="5" columns="*">
+                        <Label padding="10" borderRadius="10" textWrap="true" col="0" class="t-mini labels"
+                            text="Dalam Pengiriman"></Label>
+                    </GridLayout>
+                    <GridLayout margin="15 0 10 15" stretch="aspectFit" height="40" androidElevation="5" columns="*">
+                        <Label padding="10" borderRadius="10" textWrap="true" col="0" class="t-mini labels"
+                            text="Pesanan Selesai"></Label>
+                    </GridLayout>
+                    <GridLayout margin="15 15 10 15" stretch="aspectFit" height="50" androidElevation="5" columns="*">
+                        <Button padding="10" borderRadius="10" textWrap="true" col="0" class="t-mini labels"
+                            text="Pesanan Dibatalkan"></Button>
+                    </GridLayout>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+        <StackLayout row="2">
+            <GridLayout margin="0 15 15 15" borderRadius="10" class="labels" rows="30,auto,auto">
+                <GridLayout class="blue-core" borderRadius="9 9 0 0" row="0">
+                    <Label class="text-b" text="INV-2020032614361" class="center middle text-w "></Label>
+                </GridLayout>
+                <GridLayout padding="10" row="1" rows="25,25,25,25" columns="auto,*">
+                    <Label row="0" col="0" class="text" text="Metode Pembayaran"></Label>
+                    <Label row="0" col="1" class="right text-b " text="Cash"></Label>
+                    <Label row="1" col="0" class="text" text="Jumlah Barang"></Label>
+                    <Label row="1" col="1" class="right text-b " text="2"></Label>
+                    <Label row="2" col="0" class="text" text="Total Pembayaran"></Label>
+                    <Label row="2" col="1" class="right text-b " text="Rp 25.000"></Label>
+                    <Label row="3" col="0" class="text" text="Status Pesanan"></Label>
+                    <Label row="3" col="1" class="right text-b " text="Dikirim"></Label>
+                </GridLayout>
+                <GridLayout borderRadius="0 0 9 9" row="2">
+                    <Button class="text-b" width="100" text="Detail" class="btn-warning"></Button>
+                </GridLayout>
+            </GridLayout>
+            <GridLayout margin="0 15 15 15" borderRadius="10" class="labels" row="2" rows="30,auto,auto">
+                <GridLayout class="blue-core" borderRadius="9 9 0 0" row="0">
+                    <Label class="text-b" text="INV-2020032614361" class="center middle text-w "></Label>
+                </GridLayout>
+                <GridLayout padding="10" row="1" rows="25,25,25,25" columns="auto,*">
+                    <Label row="0" col="0" class="text" text="Metode Pembayaran"></Label>
+                    <Label row="0" col="1" class="right text-b " text="Cash"></Label>
+                    <Label row="1" col="0" class="text" text="Jumlah Barang"></Label>
+                    <Label row="1" col="1" class="right text-b " text="2"></Label>
+                    <Label row="2" col="0" class="text" text="Total Pembayaran"></Label>
+                    <Label row="2" col="1" class="right text-b " text="Rp 25.000"></Label>
+                    <Label row="3" col="0" class="text" text="Status Pesanan"></Label>
+                    <Label row="3" col="1" class="right text-b " text="Dikirim"></Label>
+                </GridLayout>
+                <GridLayout borderRadius="0 0 9 9" row="2">
+                    <Button class="text-b" width="100" text="Detail" class="btn-warning"></Button>
+                </GridLayout>
+            </GridLayout>
+        </StackLayout>
+    </GridLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<ActionBar class="gradient-blue" >
+    <ActionItem [nsRouterLink]="['/login']" class="fa" icon="font://&#xf011;">
+    </ActionItem>
+
+    <Label class="action-bar-title" text="Akun"></Label>
+</ActionBar>
+<GridLayout rows="auto,*" class="white">
+    <GridLayout margin="15 0 15 0" columns="20,auto,auto,*">
+        <Label col="0" padding="10" class="tab-off t-medium"></Label>
+        <Label col="1" padding="10" (tap)="tabChange('akun')" class="{{ tab=='akun' ? 'tab' : 'tab-off' }} t-medium" text="Akun"></Label>
+        <Label col="2" padding="10" (tap)="tabChange('alamat')" class="{{ tab=='alamat' ? 'tab' : 'tab-off' }} t-medium" text="Alamat"></Label>
+        <Label col="3" padding="10" class="tab-off t-medium"></Label>
+    </GridLayout>
+    <ScrollView row="1" scrollBarIndicatorVisible="false">
+        <GridLayout rows="*">
+            <GridLayout visibility="{{ tab=='akun' ? 'visible' : 'collapsed' }}" row="0" rows="30,auto,30,auto,30,auto">
+                <GridLayout padding="0 15 0 15" row="0" columns="*,auto">
+                    <Label col="0" class="text-b" text="Informasi Umum"></Label>
+                    <Label col="1" class="text-c fa" text="&#xf044; Edit"></Label>
+                </GridLayout>
+                <GridLayout row="1" margin="0 15 15 15" borderRadius="10" class="labels" rows="auto">
+                    <GridLayout padding="10" row="1" rows="120,25,25,25,25" columns="auto,*">
+                        <Label row="0" col="0" class="text right" text="Foto Profil"></Label>
+                        <Image row="0" col="1" src="~/app/asset/aqua.jpg" marginLeft="20" class="foto" width="100"
+                            height="100" borderRadius="10" borderWidth="0.5" stretch="aspectFit"></Image>
+                        <Label row="1" col="0" class="text right" text="Username"></Label>
+                        <Label row="1" col="1" class="left text-b " paddingLeft="20" text="FauzalGhani"></Label>
+                        <Label row="2" col="0" class="text right" text="Nama"></Label>
+                        <Label row="2" col="1" class="left text-b " paddingLeft="20" text="Fauzal Ghani"></Label>
+                        <Label row="3" col="0" class="text right" text="Tanggal Lahir"></Label>
+                        <Label row="3" col="1" class="left text-b " paddingLeft="20" text="21 September 1996"></Label>
+                        <Label row="4" col="0" class="text right" text="Jenis Kelamin"></Label>
+                        <Label row="4" col="1" class="left text-b " paddingLeft="20" text="Laki-laki"></Label>
+                    </GridLayout>
+                </GridLayout>
+                <GridLayout padding="0 15 0 15" row="2" columns="*,auto">
+                    <Label col="0" class="text-b" text="Email & Telepon"></Label>
+                    <Label col="1" class="text-c fa" text="&#xf044; Edit"></Label>
+                </GridLayout>
+                <GridLayout row="3" margin="0 15 15 15" borderRadius="10" class="labels" rows="auto">
+                    <GridLayout padding="10" row="1" rows="25,25" columns="auto,*">
+                        <Label row="0" col="0" class="text right" text="Email"></Label>
+                        <Label row="0" col="1" class="left text-b " paddingLeft="20"
+                            text="ginz.heartnet@gmail.com"></Label>
+                        <Label row="1" col="0" class="text right" text="Telepon"></Label>
+                        <Label row="1" col="1" class="left text-b " paddingLeft="20" text="082116676237"></Label>
+                    </GridLayout>
+                </GridLayout>
+                <GridLayout padding="0 15 0 15" row="4" columns="*,auto">
+                    <Label col="0" class="text-b" text="Password"></Label>
+                    <Label col="1" class="text-c fa" text="&#xf044; Edit"></Label>
+                </GridLayout>
+                <GridLayout row="5" margin="0 15 15 15" borderRadius="10" class="labels" rows="auto">
+                    <GridLayout padding="10" row="1" rows="25" columns="auto,*">
+                        <Label row="0" col="0" class="text right" text="Password"></Label>
+                        <Label row="0" col="1" class="left text-b " paddingLeft="20"
+                            text="Perubahan terakhir 29 Februari 2020"></Label>
+                    </GridLayout>
+                </GridLayout>
+            </GridLayout>
+            <GridLayout visibility="{{ tab=='alamat' ? 'visible' : 'collapsed' }}" row="0" rows="30,auto">
+                <GridLayout padding="0 15 0 15" row="0" columns="*,auto">
+                    <Label col="0" class="text-b" text="Alamat"></Label>
+                    <Label col="1" class="text-c fa" text="&#xf044; Edit"></Label>
+                </GridLayout>
+                <GridLayout row="1" margin="0 15 15 15" borderRadius="10" class="labels" rows="auto">
+                    <GridLayout padding="10" row="1" rows="auto" columns="auto,*">
+                        <Label row="0" col="0" class="text right" text="Rumah"></Label>
+                        <StackLayout row="0" col="1" class="left text-b" paddingLeft="20">
+
+                            <Label text="Ginz"></Label>
+                            <Label text="Kp Daya mekar RT 05 RW 03 No 3 Desa Cikalong Kecamatan Cikalongwetan"
+                                textWrap="true"></Label>
+                            <Label text="Telepon/Handphone: 6282116676237"></Label>
+
+                        </StackLayout>
+                    </GridLayout>
+                </GridLayout>
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+</GridLayout>

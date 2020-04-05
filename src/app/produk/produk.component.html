@@ -1,0 +1,46 @@
+<ActionBar class="blue-core">
+    <Label class="action-bar-title" text="Detail Produk"></Label>
+</ActionBar>
+<GridLayout rows="*,auto,auto,auto">
+    <GridLayout row="0" padding="10 0 10 0" rows="*,auto" class="white">
+        <GridLayout class="white-h" padding="10" borderRadius="10" rows="*,auto">
+            <Image row="0" class="middle" src="{{masak[id].image}}" width="200" height="200" borderRadius="10"
+                stretch="aspectFit">
+            </Image>
+        </GridLayout>
+    </GridLayout>
+    <GridLayout row="1" columns="*,*,*">
+        <StackLayout col="0" class="text-o">
+            <Label text="Stok" class="center t-mini bold"></Label>
+            <Label text="20" class="center t-medium"></Label>
+        </StackLayout>
+        <StackLayout col="1" class="text-o">
+            <Label text="Berat" class="center t-mini bold"></Label>
+            <Label text="15 KG" class="center t-medium"></Label>
+        </StackLayout>
+        <StackLayout col="2" class="text-o">
+            <Label text="Terjual" class="center t-mini bold"></Label>
+            <Label text="20" class="center t-medium"></Label>
+        </StackLayout>
+    </GridLayout>
+    <GridLayout borderRadius="10" class="white" androidElevation="3" margin="15 15 0 15" row="2" rows="auto,auto,auto">
+        <StackLayout row="1">
+            <Label text="{{masak[id].text}}" class="text center t-medium t-bold"></Label>
+            <Label margin="0 0 15 0" text="Rp {{formatuang(masak[id].harga)}}" class="text-c center t-medium bold"></Label>
+            <Label text="Quantity" class="center t-mini bold"></Label>
+        </StackLayout>
+        <GridLayout row="2" class="bottom center" rows="40" columns="*,70,*">
+            <Label row="0" col="0" text="&#xf068;" class="fa right text t-medium"></Label>
+            <TextField row="0" col="1" text="1" hint="1" class="input-number center t-medium">
+            </TextField>
+            <Label row="0" col="2" text="&#xf067;" class="fa left text t-medium"></Label>
+        </GridLayout>
+    </GridLayout>
+    <GridLayout row="3" padding="5 15 5 15" rows="30,50" columns="*,*">
+        <Label text="Detail &#xf107;" row="0" colSpan="2" class="center middle text-c fa"></Label>
+        <GridLayout margin="5" row="1" col="0" class="btn-warning-soft fa">
+            <Label text="Beli" class="center middle fa"></Label></GridLayout>
+        <GridLayout margin="5" row="1" col="1" class="btn-warning fa">
+            <Label text="Tambah Ke Keranjang" class="center middle fa"></Label></GridLayout>
+    </GridLayout>
+</GridLayout>

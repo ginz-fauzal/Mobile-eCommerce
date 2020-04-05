@@ -1,0 +1,31 @@
+<ActionBar class="blue-core" androidElevation="0">
+    <Label class="action-bar-title fa t-medium" text="&#xf1f9; 4AnakKost"></Label>
+</ActionBar>
+<GridLayout rows="200,*">
+    <GridLayout row="0" borderRadius="0 0 0 100%" class="blue-core">
+        <GridLayout width="100" height="100" rows="*" borderRadius="25" margin="15" class="labels">
+            <StackLayout class="middle" row="0">
+                <Label row="0" text="WAR" class="t-big span center middle bold text-o"></Label>
+                <Label row="1" text="PAN" class="t-big span center middle bold text-o"></Label>
+            </StackLayout>
+        </GridLayout>
+    </GridLayout>
+    <GridLayout row="1" rows="auto,auto,auto,*,auto" class="white-h">
+        <TextField row="0" padding="15" margin="15" androidElevation="3" hint="&#xf0e0; Email"
+            class="input fa"></TextField>
+        <TextField row="1" padding="15" margin="15" androidElevation="3" hint="&#xf084; Password" class="input fa">
+        </TextField>
+        <Label row="2" text="Lupa Password ?" class="right text" paddingRight="20"></Label>
+        <GridLayout row="3" rows="auto" class="middle">
+            <Button row="0" padding="15" margin="15" borderRadius="25" text="Login" class="btn"></Button>
+        </GridLayout>
+        <GridLayout row="4" rows="auto" margin="0 0 15 0" class="middle">
+            <Label row="0" class="center" [nsRouterLink]="['/register']">
+                <FormattedString>
+                    <Span text="Tidak memiliki akun ? "></Span>
+                    <Span text="Daftar" class="text-o" ></Span>
+                </FormattedString>
+            </Label>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>

@@ -1,0 +1,38 @@
+.bottom-navigation {
+  text-align: center;
+  border-radius: 25 25 0 0;
+  background-color: #428bca;
+}
+
+.bottom-navigation GridLayout {
+  margin: 10;
+}
+
+
+.bottom-navigation .bottom-navigation-item .fa {
+  font-size: 20;
+  color: #ffffff;
+}
+
+.bottom-navigation .bottom-navigation-item .label {
+  font-size: 10;
+  color: #ffffff;
+}
+
+.bottom-navigation-item.selected {
+  border-radius: 25;
+  background-color: white;
+}
+
+
+.bottom-navigation .bottom-navigation-item.selected .fa{
+  color: #428bca;
+  width: 40;
+  height: 21;
+  font-size: 20;
+}
+.bottom-navigation .bottom-navigation-item.selected .label {
+  color: #428bca;
+}
+
+
